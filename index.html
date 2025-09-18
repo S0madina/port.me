@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankwe Chiagozie - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a href="#home" class="active" data-section="home"><i data-lucide="home"></i><span>Home</span></a>
+                </li>
+                <li><a href="#expertise" data-section="expertise"><i data-lucide="star"></i><span>Expertise</span></a>
+                </li>
+                <li><a href="#about" data-section="about"><i data-lucide="user"></i><span>About</span></a></li>
+                <li><a href="#skills" data-section="skills"><i data-lucide="code"></i><span>Skills</span></a></li>
+                <li><a href="#portfolio" data-section="portfolio"><i
+                            data-lucide="briefcase"></i><span>Portfolio</span></a></li>
+                <li><a href="#contact" data-section="contact"><i data-lucide="mail"></i><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <img class="profile-pic" src="image/profile_pic 2.jpg" alt="Profile Picture">
+        <h1>Ankwe Chiagozie</h1>
+        <p>Software Engineer & 3D Artist</p>
+    </header>
+
+    <section id="expertise">
+        <h2>Core Expertise</h2>
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <i data-lucide="palette"></i>
+                <h3>3D Design</h3>
+                <p>Creating immersive 3D experiences and interactive visualizations</p>
+            </div>
+            <div class="expertise-card">
+                <i data-lucide="globe"></i>
+                <h3>Web Development</h3>
+                <p>Building modern, responsive web applications with cutting-edge technologies</p>
+            </div>
+            <div class="expertise-card">
+                <i data-lucide="code"></i>
+                <h3>Software Engineering</h3>
+                <p>Developing scalable and maintainable software solutions</p>
+            </div>
+            <div class="expertise-card">
+                <i data-lucide="briefcase"></i>
+                <h3>Freelance Solutions</h3>
+                <p>Delivering custom software solutions for diverse client needs</p>
+            </div>
+            <div class="expertise-card">
+                <i data-lucide="cloud"></i>
+                <h3>Cloud Architecture</h3>
+                <p>Designing and implementing robust cloud infrastructure solutions</p>
+            </div>
+            <div class="expertise-card">
+                <i data-lucide="database"></i>
+                <h3>Database Design</h3>
+                <p>Creating efficient and scalable database architectures</p>
+            </div>
+            <div class="expertise-card">
+                <i data-lucide="cpu"></i>
+                <h3>AI Integration</h3>
+                <p>Implementing AI-driven solutions for automation and optimization</p>
+            </div>
+            <div class="expertise-card">
+                <i data-lucide="git-branch"></i>
+                <h3>DevOps Practices</h3>
+                <p>Streamlining CI/CD pipelines and infrastructure automation</p>
+            </div>
+            <div class="expertise-card">
+                <i data-lucide="shield"></i>
+                <h3>Cybersecurity Solutions</h3>
+                <p>Implementing secure systems and protecting applications with advanced cybersecurity practices</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p class="about-text">I'm a programmer and 3D artist with four years of experience turning ideas into
+                reality through code and
+                creativity. I thrive on crafting efficient software and designing stunning 3D visuals that bring stories
+                to
+                life. My work blends technical expertise with artistic flair, creating seamless and engaging experiences
+                that resonate with users. I'm passionate about building solutions that are as functional as they are
+                inspiring. Curious about my professional journey? My CV showcases my skills, projects, and passion for
+                code
+                and artistry. <a href="#" class="cv-download-link" onclick="downloadCV(event)"><i
+                        data-lucide="download"></i>Download Here</a>.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2><i data-lucide="code"></i> Technical Skills</h2>
+        <div class="skills-grid">
+            <div>
+                <h3>Languages</h3>
+                <ul>
+                    <li><span class="clickable-skill" data-skill="TypeScript/JavaScript">TypeScript / JavaScript</span>
+                    </li>
+                    <li><span class="clickable-skill" data-skill="Python">Python</span></li>
+                    <li><span class="clickable-skill" data-skill="C++">C++</span></li>
+                    <li><span class="clickable-skill" data-skill="Next.js">Next.js</span></li>
+                    <li><span class="clickable-skill" data-skill="Rust">Rust</span></li>
+                    <li><span class="clickable-skill" data-skill="Swift">Swift</span></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Technologies</h3>
+                <ul>
+                    <li><span class="clickable-skill" data-skill="React/Node.js">React / Node.js</span></li>
+                    <li><span class="clickable-skill" data-skill="Kubernetes">Kubernetes</span></li>
+                    <li><span class="clickable-skill" data-skill="AWS/GCP">AWS / GCP</span></li>
+                    <li><span class="clickable-skill" data-skill="PostgreSQL/MongoDB">PostgreSQL / MongoDB</span></li>
+                    <li><span class="clickable-skill" data-skill="Redis/Kafka">Redis / Kafka</span></li>
+                </ul>
+            </div>
+            <div class="skills-3d">
+                <h3>3D Artist Work</h3>
+                <ul>
+                    <li><span class="clickable-skill" data-skill="Blender Modeling & Rendering">Blender Modeling &
+                            Rendering</span></li>
+                    <li><span class="clickable-skill" data-skill="3D Animation">3D Animation</span></li>
+                    <li><span class="clickable-skill" data-skill="Film Visual Effects">Film Visual Effects</span></li>
+                    <li><span class="clickable-skill" data-skill="Texturing & Shading">Texturing & Shading</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2><i data-lucide="server"></i> Selected Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Distributed Cache System</h3>
+                    <i data-lucide="external-link"></i>
+                </div>
+                <p>High-performance caching solution with sub-millisecond response times, built with Rust and Redis,
+                    handling 8k+ requests per second.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Microservices Orchestration</h3>
+                    <i data-lucide="external-link"></i>
+                </div>
+                <p>Open-source framework for managing microservices, communication, and deployment, reducing deployment
+                    times by 70% and improving reliability.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Real-time Analytics Dashboard</h3>
+                    <i data-lucide="external-link"></i>
+                </div>
+                <p>Interactive dashboard processing 10k+ events daily with TypeScript, React, WebSockets, and complex
+                    data streams with minimal latency.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Cloud Cost Optimizer</h3>
+                    <i data-lucide="external-link"></i>
+                </div>
+                <p>Automated tool that reduced cloud infrastructure costs by 35% through resource optimization and
+                    intelligent scaling algorithms.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>ML Pipeline Framework</h3>
+                    <i data-lucide="external-link"></i>
+                </div>
+                <p>End-to-end machine learning pipeline with automated training, validation, and deployment capabilities
+                    for production environments.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Secure API Gateway</h3>
+                    <i data-lucide="external-link"></i>
+                </div>
+                <p>Zero-trust API gateway with advanced rate limiting, authentication, and threat detection capabilities
+                    for enterprise applications.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Scalable Event Streaming Platform</h3>
+                    <i data-lucide="external-link"></i>
+                </div>
+                <p>Real-time event processing system using Kafka and Go, handling millions of events per second with low
+                    latency for enterprise applications.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Containerized CI/CD Pipeline</h3>
+                    <i data-lucide="external-link"></i>
+                </div>
+                <p>Optimized Kubernetes-based CI/CD pipeline with Docker, reducing build times by 50% and improving
+                    deployment reliability across AWS environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2><i data-lucide="mail"></i> Contact</h2>
+        <p>Passionate about fusing AI, art, and coding to craft innovative solutions? Let's collaborate to bring your
+            vision to life through cutting-edge software and immersive 3D experiences. Reach out via email or connect
+            with me on social media!</p>
+        <div class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </div>
+        <div class="contact-info">
+            <ul class="social-links-list">
+                <li><a href="mailto:ankwe@example.com" class="social-links"><i data-lucide="mail"></i>Email</a></li>
+                <li><a href="https://github.com/ankwe" class="social-links"><i data-lucide="github"></i>GitHub</a></li>
+                <li><a href="https://twitter.com/ankwe" class="social-links"><i data-lucide="twitter"></i>Twitter</a>
+                </li>
+                <li><a href="https://dribbble.com/ankwe" class="social-links"><i data-lucide="dribbble"></i>Dribbble</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons(); // Initialize Lucide icons
+
+            const navLinks = document.querySelectorAll('nav a');
+            let activeSection = 'home';
+
+            // Smooth scrolling for navigation
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const sectionId = link.getAttribute('data-section');
+                    activeSection = sectionId;
+                    updateActiveNav();
+                    const targetSection = document.getElementById(sectionId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // Update active nav item
+            function updateActiveNav() {
+                navLinks.forEach(link => {
+                    const sectionId = link.getAttribute('data-section');
+                    link.classList.toggle('active', sectionId === activeSection);
+                });
+            }
+
+            // Intersection Observer for auto-highlighting
+            const sections = document.querySelectorAll('section[id], header[id]'); // Updated to include header
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -80% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        activeSection = entry.target.id;
+                        updateActiveNav();
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+
+            // Handle clicks on clickable skills
+            const skills = document.querySelectorAll('.clickable-skill');
+            skills.forEach(skill => {
+                skill.addEventListener('click', (e) => {
+                    const skillName = e.target.getAttribute('data-skill');
+                    alert(`You clicked on: ${skillName}`);
+                });
+            });
+        });
+
+        // CV Download Function
+        function downloadCV(event) {
+            event.preventDefault();
+
+            // Open the CV in a new tab/window
+            window.open('documents/Ankwe_Chiagozie_CV.pdf', '_blank');
+
+            // Optional: Show a notification
+            alert('CV opened in new tab!');
+        }
+    </script>
+
+    <style>
+        /* Additional styles for the about section and download link */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-text {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1rem;
+            color: #d3d3d3;
+        }
+
+        .cv-download-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .cv-download-link:hover {
+            background-color: #007bff;
+            color: #ffffff;
+            border-color: #007bff;
+            text-decoration: none;
+        }
+
+        .cv-download-link i {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+            .about-text {
+                text-align: left;
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+        }
+    </style>
+</body>
+
+</html>
